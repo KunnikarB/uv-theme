@@ -1,8 +1,9 @@
 <?php get_header(); ?>
 
+  <main class="site-content">
+    <div class="gutenberg">
 
-  <main class="container">
-  
+    </div>
   </main>
 
-<?php get_footer(); ?>
+ <?php get_footer(); ?> 

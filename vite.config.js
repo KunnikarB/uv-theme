@@ -3,13 +3,11 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   build: {
     outDir: 'dist',
-    rollupOptions: {
-      input: {
-        main: 'src/js/main.js',
-      },
-      output: {
-        entryFileNames: '[name].js',
-      },
-    },
-  },
+    lib: {
+      entry: 'src/js/main.js',
+      name: 'UVTheme',
+      formats: ['iife'], 
+      fileName: () => 'main.js'
+    }
+  }
 });

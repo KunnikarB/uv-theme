@@ -25,14 +25,6 @@ function uv_assets() {
 }
 add_action('wp_enqueue_scripts', 'uv_assets');
 
-// Module Support (type="module")
-add_filter('script_loader_tag', function($tag, $handle) {
-  if ($handle === 'uv-main-js') {
-    return str_replace('<script ', '<script type="module" ', $tag);
-  }
-  return $tag;
-}, 10, 2);
-
 // Register menu
 if (!function_exists('uv_theme_setup')) {
   function uv_theme_setup() {
