@@ -1,0 +1,207 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 3,
+    "settings": {
+      "appearanceTools": true,
+      "useRootPaddingAwareAlignments": true,
+      "layout": {
+        "contentSize": "var(--uv-content-size)",
+        "wideSize": "var(--uv-wide-size)"
+      },
+      "spacing": {
+        "defaultSpacingSizes": false,
+        "units": [
+          "px",
+          "em",
+          "rem",
+          "vh",
+          "vw",
+          "%"
+        ],
+        "spacingSizes": [
+          {
+            "name": "Extra small",
+            "slug": "30",
+            "size": "var(--uv-spacing-xs)"
+          },
+          {
+            "name": "Small",
+            "slug": "40",
+            "size": "var(--uv-spacing-s)"
+          },
+          {
+            "name": "Medium",
+            "slug": "50",
+            "size": "var(--uv-spacing-m)"
+          },
+          {
+            "name": "Large",
+            "slug": "60",
+            "size": "var(--uv-spacing-l)"
+          },
+          {
+            "name": "Extra Large",
+            "slug": "70",
+            "size": "var(--uv-spacing-xl)"
+          },
+          {
+            "name": "XXL",
+            "slug": "80",
+            "size": "var(--uv-spacing-xxl)"
+          },
+          {
+            "name": "3XL",
+            "slug": "90",
+            "size": "var(--uv-spacing-3xl)"
+          },
+          {
+            "name": "4XL",
+            "slug": "100",
+            "size": "var(--uv-spacing-4xl)"
+          }
+        ]
+      },
+      "typography": {
+        "customFontSize": true,
+        "defaultFontSizes": false,
+        "fontFamilies": [
+          {
+            "fontFamily": "\"Helvetica Neue\", sans-serif ",
+            "name": "Helvetica Neue",
+            "slug": "helvetica-neue",
+            "fontFace": [
+              {
+                "fontFamily": "Helvetica Neue",
+                "fontWeight": "400",
+                "src": [
+                  "file:./assets/fonts/HelveticaNeueBold.ttf"
+                ]
+                
+              }
+            ]
+          },
+          {
+            "fontFamily": "Dosis, sans-serif",
+            "name": "Dosis",
+            "slug": "dosis",
+            "fontFace": [
+              {
+                "fontFamily": "Dosis",
+                "fontWeight": "400",
+                "src": [
+                  "file:./assets/fonts/Dosis-VariableFont_wght.ttf"
+                ]
+                
+              }
+            ]
+          }
+        ],
+        "fontSizes": [
+          {
+            "name": "Extra Small",
+            "slug": "uv-extra-small",
+            "size": "var(--uv-font-size-xs)"  
+          },
+          {
+            "name": "small",
+            "slug": "uv-small",
+            "size": "var(--uv-font-size-s)"  
+          },
+          {
+            "name": "Default",
+            "slug": "uv-default",
+            "size": "var(--uv-font-size-default)"  
+          },
+          {
+            "name": "Medium",
+            "slug": "uv-medium",
+            "size": "var(--uv-font-size-m)"  
+          },
+          {
+            "name": "Large",
+            "slug": "uv-large",
+            "size": "var(--uv-font-size-lg)"  
+          },
+          {
+            "name": "Extra Large",
+            "slug": "uv-extra-large",
+            "size": "var(--uv-font-size-xl)"  
+          },
+          {
+            "name": "2XL",
+            "slug": "uv-2xl",
+            "size": "var(--uv-font-size-2xl)"  
+          },
+          {
+            "name": "3XL",
+            "slug": "uv-3xl",
+            "size": "var(--uv-font-size-3xl)"  
+          }
+        ]
+      },
+      "color": {
+        "defaultPalette":false,
+        "palette": [
+          {
+            "name": "Dark",
+            "slug": "dark",
+            "color": "var(--uv-color-dark, #372c1D)"
+          },
+          {
+            "name": "Light",
+            "slug": "light",
+            "color": "var(--uv-color-light, #ffffff)"
+          },
+          {
+            "name": "Gray",
+            "slug": "gray",
+            "color": "var(--uv-color-gray, #efebe6)"
+          },
+          {
+            "name": "Accent",
+            "slug": "accent",
+            "color": "var(--uv-color-accent, #f28e00)"
+          },          {
+            "name": "Accent - Light",
+            "slug": "accent-light",
+            "color": "var(--uv-color-accent-300, #f7bb66 )"
+          },
+          {
+            "name": "Accent - Lighter",
+            "slug": "accent-lighter",
+            "color": "var(--uv-color-accent-200, #fad299)"
+          },
+          {
+            "name": "Accent - Lightest",
+            "slug": "accent-lightest",
+            "color": "var(--uv-color-accent-100, #fce8cc)"
+          }
+
+        ]
+      }
+    },
+    "styles": {
+      "blocks": {
+        "core/button": {
+          "color": {
+            "background": "var(--uv-color-accent, #f28e00)"
+          },
+          "typography": {
+            "fontWeight" : "400",
+            "fontSize" : "1rem"
+          },
+          "spacing": {
+            "padding": {
+              "top": "0.95em",
+              "bottom": "0.95em",
+              "left": "1.9em",
+              "right": "1.9rem"
+            }
+          }
+        }      
+      }
+    },
+    "customTemplates": [],
+    "templateParts": [],
+    "patterns": []
+}

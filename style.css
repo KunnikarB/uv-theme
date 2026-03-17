@@ -1,0 +1,215 @@
+/*
+Theme Name: UV Theme
+Author: Kunnikar Boonbunlu
+Version: 1.0
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+figure {
+  margin: 0;
+}
+
+:root {
+
+  /* Fonts */
+  --uv-font-headings: var(--wp--preset--font-family--helvetica-neue);
+
+  --uv-font-sans: var(--wp--preset--font-family--dosis);
+
+  /* Font Sizes */
+  --uv-font-size-xs: 0.563rem;
+  --uv-font-size-s: 0.750rem;
+  --uv-font-size-default: 1.000rem;
+  --uv-font-size-m: 1.313rem;
+  --uv-font-size-lg: 1.750rem;
+  --uv-font-size-xl: 2.375rem;
+  --uv-font-size-2xl: 3.188rem;
+  --uv-font-size-3xl: 4.188rem;
+
+  /* Colors */
+  --uv-color-dark:#372c1D;
+  --uv-color-light: #ffffff;
+  --uv-color-gray:#efebe6;
+  --uv-color-accent: #f28e00;
+  --uv-color-accent-300: #f7bb66;
+  --uv-color-accent-200:#fad299;
+  --uv-color-accent-100: #fce8cc;
+
+  /* Layout Settings */
+  --uv-content-size: 50rem ;
+  --uv-wide-size: 75rem;
+
+  --uv-layout-grid: [full-start] minmax(0, 1fr) [wide-start] minmax(0, calc( (var(--uv-wide-size) - var(--uv-content-size)) / 2 ))  [content-start] minmax(0, var(--uv-content-size)) [content-end] minmax(0, calc( (var(--uv-wide-size) - var(--uv-content-size)) / 2 )) [wide-end] minmax(0, 1fr) [full-end] ;
+
+  /* Spacing */
+  --uv-spacing-s: 12px;
+  --uv-spacing-default: 16px;
+  --uv-spacing-m: 24px;
+  --uv-spacing-l: 32px;
+  --uv-spacing-xl: 40px;
+  --uv-spacing-2xl: 48px;
+  --uv-spacing-3xl: 64px;
+  --uv-spacing-4xl: 100px;
+  
+}
+
+/* TYPOGRAPHY */
+.container h1,
+.container h2,
+.container h3,
+.container h4,
+.container h5,
+.container h6,
+.editor-styles-wrapper h1,
+.editor-styles-wrapper h2,
+.editor-styles-wrapper h3,
+.editor-styles-wrapper h4,
+.editor-styles-wrapper h5,
+.editor-styles-wrapper h6 {
+  font-family: var(--uv-font-headings);
+}
+
+.container p,
+.container li,
+.container input,
+.container button,
+.container .wp-block-button__link,
+.editor-styles-wrapper p,
+.editor-styles-wrapper li,
+.editor-styles-wrapper input,
+.editor-styles-wrapper button,
+.editor-styles-wrapper .wp-block-button__link {
+  font-family: var(--uv-font-sans);
+}
+
+/* Main Layout */
+body {
+  background-color: #555;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: var(--uv-layout-grid);
+}
+
+.container > * {
+  grid-column: content;
+}
+
+.container > .alignwide {
+  grid-column: wide;
+}
+
+.container > .alignfull {
+  grid-column: full;
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: var(--uv-spacing-m) var(--uv-spacing-2xl);
+  display: grid;
+}
+
+.site-header .site-header__inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.site-menu {
+  justify-self: center;
+  transition: all 0.3s ease;
+}
+
+.site-menu ul {
+  display: flex;
+  gap: var(--uv-spacing-m);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-menu.active {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+}
+
+.site-menu.active ul {
+  flex-direction: column;
+  padding: var(--uv-spacing-m);
+}
+
+.top-buttons {
+  justify-self: end;
+}
+
+.top-buttons__item--hidden {
+  display: none;
+}
+
+.top-buttons__item--hidden.is-active {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .site-header .site-header__inner {
+    grid-template-columns: 1fr auto;
+  }
+
+  .site-menu {
+    display: none;
+  }
+
+  .site-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+  }
+
+  .site-menu.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .top-buttons {
+    justify-self: end;
+  }
+
+  .top-buttons__item--hidden {
+    display: block;
+  }
+
+  /* hide other buttons on mobile */
+  .top-buttons__item:not(.top-buttons__item--hidden) {
+    display: none;
+  }
+}
