@@ -6,6 +6,8 @@ Version: 1.0
 
 * {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooting: grayscale;
 }
 
 html, body {
@@ -148,11 +150,14 @@ body {
 
 .site-menu__list a {
   text-decoration: none;
-  color: var(--uv-color-dark);
+  color: var(--uv-color-light);
+  white-space: nowrap;
+  font-size: var(--uv-font-size-m);
+  font-weight: 600;
 }
 
 .site-menu__list a:hover {
-  color: var(--uv-color-accent);
+  color: var(--uv-color-light);
 }
 
 .site-menu.active {
@@ -171,6 +176,48 @@ body {
 
 .top-buttons {
   justify-self: end;
+}
+
+.top-buttons .top-buttons__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: var(--uv-spacing-m);
+}
+
+ .button {
+  display: flex;
+  align-items: center;
+  gap: var(--uv-spacing-s);
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  border: 0;
+  color: var(--uv-color-light);
+ }
+
+.button .button__text {
+  font-size: var(--uv-font-size-m);
+  font-weight: 600;
+}
+
+.button__icon {
+  background-color: var(--uv-color-accent);
+  padding: 10px;
+  border-radius: 100%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+}
+
+.button__icon .button__icon--chevron svg {
+  transform: translateY(1px);
+}
+
+.button__text .buttons__item--responsive {
+  display: none;
 }
 
 .top-buttons__item--hidden {

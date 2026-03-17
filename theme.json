@@ -20,14 +20,14 @@
         ],
         "spacingSizes": [
           {
-            "name": "Extra small",
+            "name": "Small",
             "slug": "30",
-            "size": "var(--uv-spacing-xs)"
+            "size": "var(--uv-spacing-s)"
           },
           {
-            "name": "Small",
+            "name": "Default",
             "slug": "40",
-            "size": "var(--uv-spacing-s)"
+            "size": "var(--uv-spacing-default)"
           },
           {
             "name": "Medium",
