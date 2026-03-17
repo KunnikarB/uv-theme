@@ -19,16 +19,6 @@
       </a>
 
       <!-- Menu -->
-       <!-- <nav class="site-menu">
-        <ul>
-          <li><a href="">Se & Upplev</a></li>
-          <li><a href="">Äta & Bo</a></li>
-          <li><a href="">Butiker</a></li>
-          <li><a href="">Evenemang</a></li>
-          <li><a href="">Historia</a></li>
-        </ul>
-       </nav> -->
-
       <nav class="site-menu">
         <?php
          wp_nav_menu(array(

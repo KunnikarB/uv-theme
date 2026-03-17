@@ -3,8 +3,9 @@
 /**
  * Enqueue Styles and Script
  */
-function uv_assets() {
 
+// Assets
+function uv_assets() {
   // CSS
   wp_enqueue_style(
     'main-style',
@@ -21,22 +22,25 @@ function uv_assets() {
   filemtime(get_template_directory() . '/dist/main.js'),
   true
 );
+}
+add_action('wp_enqueue_scripts', 'uv_assets');
 
-// Add type="module"
+// Module Support (type="module")
 add_filter('script_loader_tag', function($tag, $handle) {
   if ($handle === 'uv-main-js') {
     return str_replace('<script ', '<script type="module" ', $tag);
   }
   return $tag;
 }, 10, 2);
-}
 
-add_action('wp_enqueue_scripts', 'uv_assets');
-
-// Registr menu
-function uv_theme_setup() {
-  register_nav_menus(array(
-    'primary' => 'Primary Menu'
-  ));
+// Register menu
+if (!function_exists('uv_theme_setup')) {
+  function uv_theme_setup() {
+    register_nav_menus(array(
+      'primary' => 'Primary Menu',
+      'footer'  => 'Footer Menu'
+    ));
+  }
 }
 add_action('after_setup_theme', 'uv_theme_setup');
+
