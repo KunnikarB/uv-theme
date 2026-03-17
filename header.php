@@ -19,7 +19,7 @@
       </a>
 
       <!-- Menu -->
-       <nav class="site-menu">
+       <!-- <nav class="site-menu">
         <ul>
           <li><a href="">Se & Upplev</a></li>
           <li><a href="">Äta & Bo</a></li>
@@ -27,7 +27,18 @@
           <li><a href="">Evenemang</a></li>
           <li><a href="">Historia</a></li>
         </ul>
-       </nav>
+       </nav> -->
+
+      <nav class="site-menu">
+        <?php
+         wp_nav_menu(array(
+        'theme_location' => 'primary',
+        'container' => false,
+        'menu_class' => 'site-menu__list',
+        'fallback_cb' => false
+        ));
+        ?>
+      </nav>
 
        <!-- Button -->
         <div class="top-buttons">

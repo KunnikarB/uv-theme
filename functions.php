@@ -32,3 +32,11 @@ add_filter('script_loader_tag', function($tag, $handle) {
 }
 
 add_action('wp_enqueue_scripts', 'uv_assets');
+
+// Registr menu
+function uv_theme_setup() {
+  register_nav_menus(array(
+    'primary' => 'Primary Menu'
+  ));
+}
+add_action('after_setup_theme', 'uv_theme_setup');
