@@ -1,4 +1,6 @@
 # Upplev Vadstena Theme (UV Theme)
+<img width="1411" height="889" alt="Vadstena" src="https://github.com/user-attachments/assets/9f4df7b6-777d-4547-b627-ec62b5a5a9aa" />
+
 
 A custom WordPress theme built with a modern frontend workflow using Vite.
 
