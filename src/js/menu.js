@@ -7,5 +7,7 @@ export function initMenu() {
       menu.classList.toggle('active');
       toggle.classList.toggle('is-active');
     });
+
+    
   }
 }
