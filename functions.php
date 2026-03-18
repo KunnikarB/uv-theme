@@ -1,6 +1,11 @@
 <?php  
 
 /**
+ * Theme Support
+ */
+add_theme_support('post-thumbnails');
+
+/**
  * Enqueue Styles and Script
  */
 
@@ -36,3 +41,9 @@ if (!function_exists('uv_theme_setup')) {
 }
 add_action('after_setup_theme', 'uv_theme_setup');
 
+// Open links in new tab
+add_filter('nav_menu_link_attributes', function($atts, $item, $args) {
+    $atts['target'] = '_blank';
+    $atts['rel'] = 'noopener noreferrer';
+    return $atts;
+}, 10, 3);

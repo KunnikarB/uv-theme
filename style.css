@@ -176,7 +176,7 @@ body {
 }
 
 .site-menu__list a:hover {
-  color: var(--uv-color-light);
+  color: var(--uv-color-accent);
 }
 
 .site-menu.active {
@@ -354,17 +354,14 @@ body {
 
 .site-footer__inner {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--uv-spacing-2xl);
   max-width: var(--uv-wide-size);
   margin: 0 auto;
 }
 
 /* Logo */
-.site-footer__logo {
-  font-size: var(--uv-font-size-lg);
-  margin-bottom: var(--uv-spacing-s);
-}
+
 
 /* Text */
 .site-footer__description {
@@ -446,7 +443,7 @@ body {
 }
 
 .social-link:hover {
-  background: var(--uv-color-accent);
+  background: var(--uv-color-accent-100);
   border-color: var(--uv-color-accent);
   color: #fff;
   transform: translateY(-2px);

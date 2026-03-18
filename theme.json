@@ -87,7 +87,8 @@
             "fontFace": [
               {
                 "fontFamily": "Dosis",
-                "fontWeight": "400",
+                "fontWeight": "400 600 700",
+                "fontStyle": "normal",
                 "src": [
                   "file:./assets/fonts/Dosis-VariableFont_wght.ttf"
                 ]
