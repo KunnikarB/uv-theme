@@ -79,13 +79,13 @@ Storgatan 28
         <h4 class="site-footer__heading">Sociala medier</h4>
         <!-- Social icons -->
         <div class="site-footer__social">
-          <a href="https://www.facebook.com/upplevvadstena" aria-label="Facebook" class="social-link">
+          <a href="https://www.facebook.com/upplevvadstena" aria-label="Facebook" class="social-link" target="_blank">
             <svg viewBox="0 0 24 24" width="20" height="20">
               <path fill="#F28E00" d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2.6v-2.9h2.6V9.4c0-2.6 1.5-4 3.8-4 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.5v1.8h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/>
             </svg>
           </a>
 
-          <a href="https://www.instagram.com/upplevvadstena.se" aria-label="Instagram" class="social-link">
+          <a href="https://www.instagram.com/upplevvadstena.se" aria-label="Instagram" class="social-link" target="_blank">
             <svg viewBox="0 0 24 24" width="20" height="20">
               <path fill="#F28E00" d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 5.8A4.2 4.2 0 1 1 7.8 12 4.2 4.2 0 0 1 12 7.8zm0 6.9A2.7 2.7 0 1 0 9.3 12 2.7 2.7 0 0 0 12 14.7zm4.4-7.4a1 1 0 1 1-1-1 1 1 0 0 1 1 1z"/>
             </svg>

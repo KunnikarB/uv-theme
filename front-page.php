@@ -26,8 +26,11 @@
       <span>MED STOR HISTORIA</span>
     </h1>
 
-    <a href="#" class="hero__button">
-      Utforska sevärdheter
+    <a href="https://www.upplevvadstena.se/sevardheter.htm"
+   class="hero__button"
+   target="_blank"
+   rel="noopener noreferrer">
+  Utforska sevärdheter
     </a>
   </div>
 </section>
