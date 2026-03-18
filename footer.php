@@ -98,7 +98,7 @@ Storgatan 28
       <!-- Bottom -->
       <div class="site-footer__bottom">
       <p>
-        &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All rights reserved.
+        &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All rights reserved. 👩🏻‍💻 Code By Kunnikar 
       </p>
       </div>
   </footer>
